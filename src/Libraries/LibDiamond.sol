@@ -83,6 +83,7 @@ library LibDiamond {
 
     event DiamondCut(FacetCut[] _diamondCut, address _init, bytes _calldata);
 
+    // 
     function setContractOwner(address _newOwner) internal {
         DiamondStorage storage ds = diamondStorage();
         address previousOwner = ds.contractOwner;
